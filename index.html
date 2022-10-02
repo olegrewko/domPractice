@@ -7,7 +7,23 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <div class="wrapper">
+    <button  data-num = "1" class="btn">Click01</button>
+    <button data-num = "2" class="btn">Click02</button>
+    <button data-num = "3" class="btn">Click03</button>
+    <button data-num = "4" class="btn">Click04</button>
+    <button data-num = "5" class="btn">Click05</button>
+  </div>
+  <script>
+    const buttons = document.querySelectorAll('.btn');
+    console.log(buttons);
+    const handleClick = (event) => {
+      console.log(event.target.dataset.num)
+    }
+    buttons.forEach(button => {
+      button.addEventListener('click', handleClick)
+    })
+  </script>
 
 
   <script src='./dom.js'></script>

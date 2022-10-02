@@ -46,6 +46,14 @@ html {
     margin: 20px 10px 10px;
     font-weight: bold;
   }
+  .btn {
+    background: #1b1b1b;
+    color: #fff;
+    padding: 10px 30px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+  }
 
 
   
